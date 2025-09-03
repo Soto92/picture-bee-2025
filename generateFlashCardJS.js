@@ -3,7 +3,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const assetsDir = path.join(__dirname, "assets");
+const assetsDir = path.join(__dirname, "day1");
 const outputFile = path.join(__dirname, "script.js");
 
 function capitalize(name) {

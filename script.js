@@ -1,75 +1,103 @@
 const flashcards = [
   {
-    word: "Angry",
-    img: "assets/Angry.png",
-  },
-  {
-    word: "Apple",
-    img: "assets/Apple.png",
-  },
-  {
-    word: "Ball",
-    img: "assets/Ball.png",
-  },
-  {
-    word: "Banana",
-    img: "assets/Banana.png",
-  },
-  {
-    word: "Bathroom",
-    img: "assets/Bathroom.png",
-  },
-  {
-    word: "Bed",
-    img: "assets/Bed.png",
-  },
-  {
-    word: "Bedroom",
-    img: "assets/Bedroom.png",
-  },
-  {
     word: "Bird",
     img: "assets/Bird.png",
   },
   {
-    word: "Broccoli",
-    img: "assets/Broccoli.png",
+    word: "Black",
+    img: "assets/Black.png",
   },
   {
-    word: "Carrot",
-    img: "assets/Carrot.png",
+    word: "Blue",
+    img: "assets/Blue.png",
+  },
+  {
+    word: "Brown",
+    img: "assets/Brown.png",
   },
   {
     word: "Cat",
     img: "assets/Cat.png",
   },
   {
-    word: "Chair",
-    img: "assets/Chair.png",
-  },
-  {
     word: "Dog",
     img: "assets/Dog.png",
+  },
+  {
+    word: "Eight",
+    img: "assets/Eight.png",
   },
   {
     word: "Fish",
     img: "assets/Fish.png",
   },
   {
-    word: "Happy",
-    img: "assets/Happy.png",
+    word: "Five",
+    img: "assets/Five.png",
+  },
+  {
+    word: "Four",
+    img: "assets/Four.png",
+  },
+  {
+    word: "Green",
+    img: "assets/Green.png",
   },
   {
     word: "Hen",
     img: "assets/Hen.png",
   },
   {
-    word: "Hungry",
-    img: "assets/Hungry.png",
+    word: "Nine",
+    img: "assets/Nine.png",
   },
   {
-    word: "Pillow",
-    img: "assets/Pillow.png",
+    word: "One",
+    img: "assets/One.png",
+  },
+  {
+    word: "Orange",
+    img: "assets/Orange.png",
+  },
+  {
+    word: "Pink",
+    img: "assets/Pink.png",
+  },
+  {
+    word: "Purple",
+    img: "assets/Purple.png",
+  },
+  {
+    word: "Red",
+    img: "assets/Red.png",
+  },
+  {
+    word: "Seven",
+    img: "assets/Seven.png",
+  },
+  {
+    word: "Six",
+    img: "assets/Six.png",
+  },
+  {
+    word: "Ten",
+    img: "assets/Ten.png",
+  },
+  {
+    word: "Three",
+    img: "assets/Three.png",
+  },
+  {
+    word: "Two",
+    img: "assets/Two.png",
+  },
+  {
+    word: "White",
+    img: "assets/White.png",
+  },
+  {
+    word: "Yellow",
+    img: "assets/Yellow.png",
   },
 ];
 
