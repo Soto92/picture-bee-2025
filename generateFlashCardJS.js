@@ -18,7 +18,7 @@ const flashcards = files.map((file) => {
   const baseName = path.basename(file, path.extname(file));
   return {
     word: capitalize(baseName),
-    img: `assets/${file}`,
+    img: `day1/${file}`,
   };
 });
 
