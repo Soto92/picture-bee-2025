@@ -1,25 +1,35 @@
-// this is just a helper tool
-
 const fs = require("fs");
 const path = require("path");
 
-const assetsDir = path.join(__dirname, "day1");
-const outputFile = path.join(__dirname, "script.js");
+const baseDir = __dirname;
+const outputFile = path.join(baseDir, "script.js");
 
 function capitalize(name) {
   return name.charAt(0).toUpperCase() + name.slice(1);
 }
 
-const files = fs
-  .readdirSync(assetsDir)
-  .filter((file) => /\.(png|jpg|jpeg|gif|svg)$/i.test(file));
+const dayDirs = fs
+  .readdirSync(baseDir)
+  .filter(
+    (f) =>
+      fs.statSync(path.join(baseDir, f)).isDirectory() && /^day\d+$/i.test(f)
+  );
 
-const flashcards = files.map((file) => {
-  const baseName = path.basename(file, path.extname(file));
-  return {
-    word: capitalize(baseName),
-    img: `day1/${file}`,
-  };
+const flashcards = {};
+
+dayDirs.forEach((dayFolder) => {
+  const dayNumber = dayFolder.match(/\d+/)[0];
+  const files = fs
+    .readdirSync(path.join(baseDir, dayFolder))
+    .filter((file) => /\.(png|jpg|jpeg|gif|svg)$/i.test(file));
+
+  flashcards[dayNumber] = files.map((file) => {
+    const baseName = path.basename(file, path.extname(file));
+    return {
+      word: capitalize(baseName),
+      img: `${dayFolder}/${file}`,
+    };
+  });
 });
 
 const arrayString =
@@ -33,4 +43,4 @@ scriptContent = arrayString + scriptContent;
 
 fs.writeFileSync(outputFile, scriptContent, "utf-8");
 
-console.log("✅ Flashcards array updated in script.js");
+console.log("✅ Flashcards object atualizado em script.js");

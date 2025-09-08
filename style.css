@@ -10,6 +10,40 @@ body {
     height: 100vh;
 }
 
+.hidden {
+    display: none;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+#menu h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+.day-btn {
+    width: 80vw;
+    max-width: 300px;
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    border-radius: 12px;
+    background: #4CAF50;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.day-btn:active {
+    background: #388E3C;
+}
+
 .card {
     width: 80vw;
     max-width: 300px;
@@ -58,7 +92,13 @@ body {
     transform: rotateY(180deg);
 }
 
-button {
+#game {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#game button {
     width: 80vw;
     max-width: 300px;
     padding: 15px;
@@ -69,8 +109,14 @@ button {
     color: white;
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
 }
 
-button:active {
+#game button:active {
     background: #1976D2;
+}
+
+#menu.hidden,
+#game.hidden {
+    display: none !important;
 }

@@ -11,15 +11,30 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="card" id="flashcard">
-      <div class="card-inner">
-        <div class="card-front">
-          <img src="" alt="" id="card-image" />
-        </div>
-        <div class="card-back" id="card-word"></div>
-      </div>
+    <!-- MENU -->
+    <div id="menu">
+      <h1>Rafinha Flash Cards</h1>
+      <button class="day-btn" data-day="1">Day 1</button>
+      <button class="day-btn" data-day="2">Day 2</button>
+      <button class="day-btn" data-day="3">Day 3</button>
+      <button class="day-btn" data-day="4">Day 4</button>
     </div>
-    <button id="nextBtn">Next</button>
+
+    <!-- GAME -->
+    <div id="game" class="hidden">
+      <div class="card" id="flashcard">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="" alt="" id="card-image" />
+          </div>
+          <div class="card-back" id="card-word"></div>
+        </div>
+      </div>
+
+      <button id="nextBtn">Next</button>
+      <button id="homeBtn">Home</button>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
